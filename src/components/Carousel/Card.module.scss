@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+$moreBtnColor: #000000;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: 1.3em;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.2);
+  .cardImg {
+    img {
+      width: 16.875em;
+    }
+  }
+  .cardTitle {
+    color: #6f6f6f;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+  }
+  .cardPrice {
+    color: #000000;
+    font-size: 1.25rem;
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+  .cardBtn button {
+    color: #000000;
+    font-size: 1.5rem;
+    border-radius: 1em;
+    padding: 0.5em 2em;
+    background-color: #f2f2f2;
+    border: solid 3px#000000;
+  }
+  .cardBtnChecked button {
+    font-size: 1.5rem;
+    border-radius: 1em;
+    padding: 0.5em 2em;
+    color: #ffffff;
+    background-color: #000000;
+    border: solid 3px#000000;
+  }
+  button:hover {
+    transition: 0.3s;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #656565;
+  }
+}

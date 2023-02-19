@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+.overlay {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 8;
+}
+
+.drawer {
+    font-family: 'Krona One';
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 33em;
+    height: 100vh;
+    right: 0;
+    margin: 0;
+    background: #ffffff;
+    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+
+    .drawerWrapper {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        padding: 1em 2em;
+        width: 100vw;
+
+        .drawerHead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 2em 0;
+            //background-color: red;
+            font-size: 1.4rem;
+
+            img {
+                width: 1.7em;
+                height: 1.7em;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &:active {
+                    transition: 0.1s;
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .cartList {
+            flex: 1;
+            overflow: auto;
+            margin: 0 0 1em;
+
+            .cartItem {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1.5em;
+                padding: 0.8em;
+                font-size: 1rem;
+                border-radius: 0.5em;
+                background-color: #f2f2f2;
+                box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.2);
+
+                .cartImage img {
+                    width: 5em;
+                }
+
+                .cartItemClose {
+                    opacity: 0.7;
+                    width: 2em;
+                    transition: 0.2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
+                    &:active {
+                        transition: 0.1s;
+                        transform: scale(1);
+                    }
+                }
+
+                .cartInfo {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    .cartTitle {
+                        color: #6f6f6f;
+                        ;
+                    }
+                }
+
+                .cartClose img {
+                    opacity: 0.5;
+                    width: 2em;
+                    transition: 0.2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
+                    &:active {
+                        transition: 0.1s;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        .totalBlock {
+            font-size: 1.5rem;
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+
+                }
+            }
+
+            button {
+                width: 100%;
+                color: #000000;
+                font-size: 1.5rem;
+                border-radius: 1em;
+                margin: 1em 0;
+                padding: 0.5em 1em;
+                background-color: #f2f2f2;
+                border: solid 3px#000000;
+                cursor: pointer;
+                transition: 0.2s;
+
+                &:hover {
+                    color: #ffffff;
+                    background-color: #000000;
+                    transform: scale(1.02);
+                }
+
+                &:active {
+                    transition: 0.1s;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

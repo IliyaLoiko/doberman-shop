@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+$testcolor: #a8a8a8;
+$btnHeaderColor: #ffffff;
+$btnHeaderHover: #EEEEEE;
+
+.header {
+  position: relative;
+  font-family: 'Krona One', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 1.25em 9.125em;
+  //background-color: $testcolor;
+  color: #000;
+
+  button {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 1em 2em;
+    background-color: $btnHeaderColor;
+    color: #000;
+  }
+
+  button:hover {
+    scale: 1.01;
+    transition: 0.2s;
+    background-color: $btnHeaderHover;
+    cursor: pointer;
+  }
+
+  .logo {
+    .logoText {
+      margin: 0;
+    }
+
+    img {
+      margin: 0 0.5em 0 0;
+      height: 2.75em;
+    }
+  }
+
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .cartBtn {
+    display: flex;
+    align-content: center;
+    color: #000000;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+
+    &:hover {
+      scale: 1.01;
+      transition: 0.2s;
+      background-color: $btnHeaderHover;
+      cursor: pointer;
+    }
+
+    img {
+      align-self: center;
+      height: 2.75em;
+      margin: 0 1em 0 0;
+    }
+
+    .cartText p {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
